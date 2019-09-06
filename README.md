@@ -1,4 +1,4 @@
-# numpy_testing
+# Numpy Testing
 
 the purpose of this repository is to learn more about LAPACK, BLAS and ATLAS.
 
