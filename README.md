@@ -9,9 +9,11 @@ one can use locate command (https://openmx.ssri.psu.edu/wiki/blas-library-help)
 
 another way to get information about lapack, blas, atlas.  liblapack3, libblas3 , libatlas-base-dev(https://stackoverflow.com/questions/15851831/how-to-check-if-blas-and-atlas-already-installed)
 
-``apt-cache policy liblapack3``
-``apt-cache policy libblas3``
-``apt-cache policy libatlas-base-dev``
+```
+apt-cache policy liblapack3
+apt-cache policy libblas3
+apt-cache policy libatlas-base-dev
+```
 
 currently I don't have it installed
 ```
