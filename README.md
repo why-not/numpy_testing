@@ -15,7 +15,7 @@ apt-cache policy libblas3
 apt-cache policy libatlas-base-dev
 ```
 
-currently I don't have it installed
+currently I don't have them installed
 ```
 (base) femtoland@femtoland:~$ apt-cache policy liblapack3
 liblapack3:
