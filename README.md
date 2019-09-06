@@ -9,4 +9,4 @@ I have asked https://apple.stackexchange.com/questions/368380/lapack-blas-atlas-
 references:
 - [LAPACK] https://en.wikipedia.org/wiki/LAPACK
 - [BLAS] http://www.netlib.org/blas/
-- [ATLAS] atlas (automatically tuned linear algebra software)
+- [ATLAS] https://en.wikipedia.org/wiki/Automatically_Tuned_Linear_Algebra_Software
