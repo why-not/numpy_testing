@@ -4,6 +4,7 @@ the purpose of this repository is to learn more about LAPACK, BLAS and ATLAS.
 
 ## How to find the location of LAPACK, BLAS, ATLAS
 one can use locate command (https://openmx.ssri.psu.edu/wiki/blas-library-help)
+
 ``locate libblas.so`` 
 
 another way to get information about lapack (https://stackoverflow.com/questions/15851831/how-to-check-if-blas-and-atlas-already-installed)
