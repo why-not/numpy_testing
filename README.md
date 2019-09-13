@@ -40,6 +40,7 @@ libatlas-base-dev:
         500 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
 ```
 ## Mac Book Pro Hardware information
+  ```
   Model Name:	MacBook Pro
   Model Identifier:	MacBookPro14,1
   Processor Name:	Intel Core i5
@@ -52,6 +53,7 @@ libatlas-base-dev:
   Memory:	16 GB
   Boot ROM Version:	198.0.0.0.0
   SMC Version (system):	2.43f6
+  ```
 
 
 ## How to disengage LAPACK, BLAS, ATLAS on mac and linux
