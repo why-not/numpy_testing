@@ -39,7 +39,8 @@ libatlas-base-dev:
      3.10.3-5 500
         500 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
 ```
-## Mac Book Pro Hardware information
+## Test on Mac Book Pro
+### Hardware information
   ```
   Model Name:	MacBook Pro
   Model Identifier:	MacBookPro14,1
@@ -54,7 +55,29 @@ libatlas-base-dev:
   Boot ROM Version:	198.0.0.0.0
   SMC Version (system):	2.43f6
   ```
+### Results of tests
+```
+n [33]: run test.py
+read 32 images 1 times: 2.53048706055 seconds per loop
+sum axis=0 32 images 10 times: 0.612431001663 seconds per loop
+sum axis=1 32 images 10 times: 0.39970459938 seconds per loop
+sum full 32 images 10 times: 0.343644690514 seconds per loop
+mean 32 images 10 times: 0.324725699425 seconds per loop
 
+In [34]: run test.py
+read 32 images N = 5 times: 3.28182039261 seconds per loop
+sum axis=0 32 images N = 20 times: 0.698462152481 seconds per loop
+sum axis=1 32 images N = 20 times: 0.39868710041 seconds per loop
+sum full 32 images N = 20 times: 0.343178701401 seconds per loop
+mean 32 images N = 20 times: 0.333559799194 seconds per loop
+
+In [1]: run test.py
+read 32 images N = 5 times: 2.56678800583 seconds per loop
+sum axis=0 32 images N = 20 times: 0.611644756794 seconds per loop
+sum axis=1 32 images N = 20 times: 0.397477507591 seconds per loop
+sum full 32 images N = 20 times: 0.341990947723 seconds per loop
+mean 32 images N = 20 times: 0.320617651939 seconds per loop
+```
 
 ## How to disengage LAPACK, BLAS, ATLAS on mac and linux
 
