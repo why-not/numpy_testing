@@ -82,6 +82,7 @@ mean 32 images N = 20 times: 0.320617651939 seconds per loop
 
 ## Test on AWS Ubuntu Image optimized for Deep Learning. (t3a.2xlarge: 8 cores, 32 GB Ram) 
 
+```
 run test.py
 generate_data, N times = 50 times: 0.05521430158000044 seconds per loop
 sum axis=0 N times= 200 times: 0.013160574044999863 seconds per loop
@@ -102,7 +103,7 @@ sum axis=0 N times= 200 times: 0.011368431889999897 seconds per loop
 sum axis=1 N times = 200 times: 0.013211888019999946 seconds per loop
 sum full N times= 200 times: 0.013100763045000009 seconds per loop
 mean 32 N times = 200 times: 0.013218856825000102 seconds per loop
-
+```
 
 ## Test on AWS Ubuntu Image optimized for Deep Learning. (t3a.2xlarge: 8 cores, 32 GB Ram) 
 
