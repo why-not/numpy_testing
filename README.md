@@ -105,8 +105,36 @@ sum full N times= 200 times: 0.013100763045000009 seconds per loop
 mean 32 N times = 200 times: 0.013218856825000102 seconds per loop
 ```
 
-## Test on AWS Ubuntu Image optimized for Deep Learning. (t3a.2xlarge: 8 cores, 32 GB Ram) 
+## Test on AWS Ubuntu Image optimized for Deep Learning. (c5d.2xlarge: 8 cores, 16 GB Ram) 
 
+```
+ubuntu@ip-172-30-0-9:~$ source activate mxnet_p36
+(mxnet_p36) ubuntu@ip-172-30-0-9:~$ ipython
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.4.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: run test.py
+generate_data, N times = 50 times: 0.04426059433999995 seconds per loop
+sum axis=0 N times= 200 times: 0.009342705459999934 seconds per loop
+sum axis=1 N times = 200 times: 0.013293346549999967 seconds per loop
+sum full N times= 200 times: 0.013351381415000106 seconds per loop
+mean 32 N times = 200 times: 0.009968762909999923 seconds per loop
+
+In [2]: run test.py
+generate_data, N times = 50 times: 0.04374865192000016 seconds per loop
+sum axis=0 N times= 200 times: 0.009376861555000034 seconds per loop
+sum axis=1 N times = 200 times: 0.012888064189999967 seconds per loop
+sum full N times= 200 times: 0.012832252030000007 seconds per loop
+mean 32 N times = 200 times: 0.009922239149999967 seconds per loop
+
+In [3]: run test.py
+generate_data, N times = 50 times: 0.04357514243999958 seconds per loop
+sum axis=0 N times= 200 times: 0.009447478594999979 seconds per loop
+sum axis=1 N times = 200 times: 0.013025719820000035 seconds per loop
+sum full N times= 200 times: 0.013008963770000008 seconds per loop
+mean 32 N times = 200 times: 0.009978990769999996 seconds per loop
+```
 
 ## How to disengage LAPACK, BLAS, ATLAS on mac and linux
 
