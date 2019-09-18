@@ -136,6 +136,32 @@ sum full N times= 200 times: 0.013008963770000008 seconds per loop
 mean 32 N times = 200 times: 0.009978990769999996 seconds per loop
 ```
 
+## Test on AWS Ubuntu Image optimized for Deep Learning. (t2.nano: 1 cores, 0.5 GB Ram, Smallest Possible Amazon Server) 
+
+```
+In [1]: run test.py
+generate_data, N times = 50 times: 0.06553657586 seconds per loop
+sum axis=0 N times= 200 times: 0.013732203115000025 seconds per loop
+sum axis=1 N times = 200 times: 0.016420330545000007 seconds per loop
+sum full N times= 200 times: 0.01639490290000001 seconds per loop
+mean 32 N times = 200 times: 0.015590667734999961 seconds per loop
+
+In [2]: run test.py
+generate_data, N times = 50 times: 0.06461507319999982 seconds per loop
+sum axis=0 N times= 200 times: 0.01365810035999992 seconds per loop
+sum axis=1 N times = 200 times: 0.016625747829999968 seconds per loop
+sum full N times= 200 times: 0.01636717886999989 seconds per loop
+mean 32 N times = 200 times: 0.0157351610149999 seconds per loop
+
+In [3]: run test.py
+generate_data, N times = 50 times: 0.06342938600000025 seconds per loop
+sum axis=0 N times= 200 times: 0.013575194484999997 seconds per loop
+sum axis=1 N times = 200 times: 0.01668353084000003 seconds per loop
+sum full N times= 200 times: 0.016531246105000008 seconds per loop
+mean 32 N times = 200 times: 0.015784036969999988 seconds per loop
+```
+
+
 ## How to disengage LAPACK, BLAS, ATLAS on mac and linux
 
 I have asked https://apple.stackexchange.com/questions/368380/lapack-blas-atlas-on-mac-book-pro-2017-mojave
