@@ -161,6 +161,36 @@ sum full N times= 200 times: 0.016531246105000008 seconds per loop
 mean 32 N times = 200 times: 0.015784036969999988 seconds per loop
 ```
 
+## Information About Installed Linear Algebra Accelerators 
+
+(Same for all the amazon tests) 
+
+```
+apt-cache policy liblapack3
+liblapack3:
+  Installed: 3.6.0-2ubuntu2
+  Candidate: 3.6.0-2ubuntu2
+  Version table:
+ *** 3.6.0-2ubuntu2 500
+        500 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+        100 /var/lib/dpkg/status
+(mxnet_p36) ubuntu@ip-172-30-0-9:~$ apt-cache policy libblas3
+libblas3:
+  Installed: 3.6.0-2ubuntu2
+  Candidate: 3.6.0-2ubuntu2
+  Version table:
+ *** 3.6.0-2ubuntu2 500
+        500 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+        100 /var/lib/dpkg/status
+(mxnet_p36) ubuntu@ip-172-30-0-9:~$ apt-cache policy libatlas-base-dev
+libatlas-base-dev:
+  Installed: 3.10.2-9
+  Candidate: 3.10.2-9
+  Version table:
+ *** 3.10.2-9 500
+        500 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+        100 /var/lib/dpkg/status
+```
 
 ## How to disengage LAPACK, BLAS, ATLAS on mac and linux
 
